@@ -50,7 +50,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export FOX_REPLACE_BUSYBOX_PS=1
 	export FOX_ENABLE_APP_MANAGER=1
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
-	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1510672800" # Tuesday,   November 14, 2017 15:20:00 GMT
+	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1510672800" # Tuesday,   April GMT
 	export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 	export OF_UNBIND_SDCARD_F2FS=1
 	export OF_USE_GREEN_LED=0
@@ -78,8 +78,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# A/B
    	export OF_AB_DEVICE=1
-   	export TARGET_DEVICE_ALT="daisy_sprout"
-	export OF_TARGET_DEVICES="daisy_sprout,daisy"
+   	export TARGET_DEVICE_ALT="daisy"
+	export OF_TARGET_DEVICES="daisy"
 	export FOX_RESET_SETTINGS="disabled"
 fi
 #
