@@ -89,3 +89,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RESET_SETTINGS="disabled"
 fi
 #
+
+       # Some about us
+       export OF_MAINTAINER="AFK FARHAN"
+       export OF_MAINTAINER_AVATAR="device/xiaomi/daisy/maintainer.png"
+       export FOX_VERSION="R11.1_9-4.19"
+       export FOX_BUILD_TYPE="STABLE"
+       export FOX_VARIANT="A12"
