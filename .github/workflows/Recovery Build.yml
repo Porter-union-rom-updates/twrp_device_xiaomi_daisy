@@ -1,32 +1,33 @@
-name: Recovery Build orange fox
+name: Recovery Build
 
 on:
   workflow_dispatch:
     inputs:
       MANIFEST_BRANCH:
         type: choice
-        description: Manifest Branch
+        description: Manifest Branch nigga
         options:
         - 12.1
+        - 14.1
         - 11
         required: true
         default: 12.1
       DEVICE_TREE_URL:
-        description: Device Tree URL
+        description: Device Tree URL nigga
         required: true
-        default: https://github.com/Porter-union-rom-updates/twrp_device_xiaomi_daisy
+        default: https://gitlab.com/OrangeFox/device/lavender
       DEVICE_TREE_BRANCH:
-        description: Device Tree Branch
+        description: Device Tree Branch nigga
         required: true
         default: fox_12.1
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/xiaomi/daisy 
+        default: device/xiaomi/lavender
       DEVICE_NAME:
         description: Device Name from tree (should match name on twrp_<DEVICE_NAME>.mk)
         required: true
-        default: daisy 
+        default: lavender
       BUILD_TARGET:
         type: choice
         description: Partition containing recovery ramdisk
